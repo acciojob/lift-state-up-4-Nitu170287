@@ -25,10 +25,10 @@ const App = () => {
         {/* Do not remove the main div */}
         <h1>Parent Component </h1>
         <label>Item Name</label>
-        <input type="text" name="inputItem" onChange={(e)=>setInputItemName(e.target.value)} value={inputItemName}></input>
+        <input type="text" id="itemName" name="inputItem" onChange={(e)=>setInputItemName(e.target.value)} value={inputItemName}></input>
 
         <label>Item Price</label>
-        <input type="number" name="inputItemPrice" onChange={(e)=>setInputItemPrice(e.target.value)} value={inputItemPrice}></input>
+        <input type="number" id="itemPrice" name="inputItemPrice" onChange={(e)=>setInputItemPrice(e.target.value)} value={inputItemPrice}></input>
 
         <button onClick={addItem}>Add Item</button>
 
